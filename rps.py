@@ -1,4 +1,5 @@
 from random import randint
+from time import sleep
 
 while True:
     print("Enter choice:\n 1. Rock\n 2. Paper\n 3. Scissors\n")
@@ -21,7 +22,9 @@ while True:
         comp_choice = 'Paper'
     else:
         comp_choice = 'Scissors'
+    sleep(1)
     print("Computer's choice: " + comp_choice)
+    sleep(1)
     #condition for winning
     if comp==1:
         if choice == 2:
