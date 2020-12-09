@@ -3,7 +3,7 @@ from random import randint
 while True:
     print("Enter choice:\n 1. Rock\n 2. Paper\n 3. Scissors\n")
     choice = int(input("Enter choice number: \n"))
-    if choice>3 or choice<1:
+    while choice>3 or choice<1:
         choice = int(input("Enter valid input!: "))
     #user choice between 1 to 3
     if choice == 1:
